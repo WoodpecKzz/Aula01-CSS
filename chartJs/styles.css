@@ -1,0 +1,36 @@
+.body1 {
+    background-color: #AFEEEE;
+    
+}
+
+.body2 {
+    background-color: #FFDAB9;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+
+.grafico_barra {
+    margin: auto;
+    margin-top: 100px;
+    height: 35%;
+    width: 40%;
+    padding: 30px 30px 30px 30px;
+    background-color: 	#E0FFFF;
+    border-radius: 10px;
+}
+
+.grafico_linha {
+    margin: auto;
+    margin-top: 100px;
+    height: 35%;
+    width: 40%;
+    padding: 30px 30px 30px 30px;
+    background-color: #E0FFFF;
+    border-radius: 10px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos Show!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="body1">
+    <div class="grafico_barra">
+
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+
+    </div>
+    <p class="link">
+        <a href="grafico02.html">VEJA AS HORAS DE CADA DIA</a>
+    </p>
+</body>
+
+<!--Gráfico de Barras-->
+<script>
+    const labels = [
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Temperatura Média',
+            backgroundColor: 'rgb(255, 69,0)',
+            borderColor: 'rgb(255, 69, 0)',
+            data: [22, 24, 27, 23, 20, 18],
+
+        },
+        {
+            label: 'Umidade Média',
+            backgroundColor: 'rgb(100, 149, 237)',
+            borderColor: 'rgb(100, 149, 237)',
+            data: [90, 89, 93, 87, 88, 82],
+
+        }]
+    };
+
+
+
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {}
+    };
+
+</script>
+
+
+
+<script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+
+</script>
